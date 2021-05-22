@@ -10,18 +10,19 @@ using System.Windows.Forms;
 
 namespace BancoGUI
 {
-    public partial class Form1 : Form
+    public partial class FrmPrincipal : Form
     {
-        public Form1()
+        private Form1 form1;
+
+        public FrmPrincipal()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        public FrmPrincipal(Form1 form1)
         {
-            FrmPrincipal Fpri = new FrmPrincipal(this);
-            Fpri.Show();
-            this.Hide();
+            InitializeComponent();
+            this.Owner = form1;
         }
     }
 }
