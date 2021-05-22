@@ -30,5 +30,23 @@ namespace BancoGUI
             this.Owner.Show();
             this.Close();
         }
+
+        private void btnLimpiarCliente_Click(object sender, EventArgs e)
+        {
+            tbApellido.Clear();
+            tbNombre.Clear();
+            tbDni.Clear();
+            tbTel.Clear();
+            tbUser.Clear();
+            tbFecNac.Clear();
+            tbMail.Clear();
+            tbDire.Clear();
+        }
+
+        private void btnActualizar_Click(object sender, EventArgs e)
+        {
+            //este método va a hacer el GET de la API
+
+        }
     }
 }

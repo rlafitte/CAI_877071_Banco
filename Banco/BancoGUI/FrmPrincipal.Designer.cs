@@ -43,6 +43,14 @@ namespace BancoGUI
             this.tbDire = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.tbMail = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.tbTel = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.tbFecNac = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.tbUser = new System.Windows.Forms.TextBox();
+            this.btnAgregarCliente = new System.Windows.Forms.Button();
+            this.btnLimpiarCliente = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -64,6 +72,7 @@ namespace BancoGUI
             this.btnActualizar.TabIndex = 1;
             this.btnActualizar.Text = "Actualizar";
             this.btnActualizar.UseVisualStyleBackColor = true;
+            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
             // 
             // listBox1
             // 
@@ -91,6 +100,14 @@ namespace BancoGUI
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btnLimpiarCliente);
+            this.groupBox1.Controls.Add(this.btnAgregarCliente);
+            this.groupBox1.Controls.Add(this.label8);
+            this.groupBox1.Controls.Add(this.tbUser);
+            this.groupBox1.Controls.Add(this.label7);
+            this.groupBox1.Controls.Add(this.tbFecNac);
+            this.groupBox1.Controls.Add(this.label6);
+            this.groupBox1.Controls.Add(this.tbTel);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.tbMail);
             this.groupBox1.Controls.Add(this.label4);
@@ -103,7 +120,7 @@ namespace BancoGUI
             this.groupBox1.Controls.Add(this.tbDni);
             this.groupBox1.Location = new System.Drawing.Point(367, 46);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(255, 238);
+            this.groupBox1.Size = new System.Drawing.Size(255, 267);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Alta de cliente";
@@ -172,6 +189,73 @@ namespace BancoGUI
             this.tbMail.Size = new System.Drawing.Size(100, 20);
             this.tbMail.TabIndex = 11;
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(33, 147);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(49, 13);
+            this.label6.TabIndex = 14;
+            this.label6.Text = "Teléfono";
+            // 
+            // tbTel
+            // 
+            this.tbTel.Location = new System.Drawing.Point(119, 144);
+            this.tbTel.Name = "tbTel";
+            this.tbTel.Size = new System.Drawing.Size(100, 20);
+            this.tbTel.TabIndex = 13;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(33, 173);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(63, 13);
+            this.label7.TabIndex = 16;
+            this.label7.Text = "Fecha Nac.";
+            // 
+            // tbFecNac
+            // 
+            this.tbFecNac.Location = new System.Drawing.Point(119, 170);
+            this.tbFecNac.Name = "tbFecNac";
+            this.tbFecNac.Size = new System.Drawing.Size(100, 20);
+            this.tbFecNac.TabIndex = 15;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(33, 199);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(81, 13);
+            this.label8.TabIndex = 18;
+            this.label8.Text = "Nombre usuario";
+            // 
+            // tbUser
+            // 
+            this.tbUser.Location = new System.Drawing.Point(119, 196);
+            this.tbUser.Name = "tbUser";
+            this.tbUser.Size = new System.Drawing.Size(100, 20);
+            this.tbUser.TabIndex = 17;
+            // 
+            // btnAgregarCliente
+            // 
+            this.btnAgregarCliente.Location = new System.Drawing.Point(153, 238);
+            this.btnAgregarCliente.Name = "btnAgregarCliente";
+            this.btnAgregarCliente.Size = new System.Drawing.Size(87, 23);
+            this.btnAgregarCliente.TabIndex = 6;
+            this.btnAgregarCliente.Text = "Agregar";
+            this.btnAgregarCliente.UseVisualStyleBackColor = true;
+            // 
+            // btnLimpiarCliente
+            // 
+            this.btnLimpiarCliente.Location = new System.Drawing.Point(9, 238);
+            this.btnLimpiarCliente.Name = "btnLimpiarCliente";
+            this.btnLimpiarCliente.Size = new System.Drawing.Size(87, 23);
+            this.btnLimpiarCliente.TabIndex = 19;
+            this.btnLimpiarCliente.Text = "Limpiar";
+            this.btnLimpiarCliente.UseVisualStyleBackColor = true;
+            this.btnLimpiarCliente.Click += new System.EventHandler(this.btnLimpiarCliente_Click);
+            // 
             // FrmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -205,5 +289,13 @@ namespace BancoGUI
         private System.Windows.Forms.TextBox tbApellido;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox tbNombre;
+        private System.Windows.Forms.Button btnLimpiarCliente;
+        private System.Windows.Forms.Button btnAgregarCliente;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox tbUser;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox tbFecNac;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox tbTel;
     }
 }
