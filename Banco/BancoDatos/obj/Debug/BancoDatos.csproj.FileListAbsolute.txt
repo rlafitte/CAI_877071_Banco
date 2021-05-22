@@ -1,0 +1,9 @@
+C:\Users\renar\Desktop\CAI\Banco\CAI_877071_Banco\Banco\BancoDatos\bin\Debug\BancoDatos.dll
+C:\Users\renar\Desktop\CAI\Banco\CAI_877071_Banco\Banco\BancoDatos\bin\Debug\BancoDatos.pdb
+C:\Users\renar\Desktop\CAI\Banco\CAI_877071_Banco\Banco\BancoDatos\bin\Debug\BancoEntidades.dll
+C:\Users\renar\Desktop\CAI\Banco\CAI_877071_Banco\Banco\BancoDatos\bin\Debug\BancoEntidades.pdb
+C:\Users\renar\Desktop\CAI\Banco\CAI_877071_Banco\Banco\BancoDatos\obj\Debug\BancoDatos.csprojAssemblyReference.cache
+C:\Users\renar\Desktop\CAI\Banco\CAI_877071_Banco\Banco\BancoDatos\obj\Debug\BancoDatos.csproj.CoreCompileInputs.cache
+C:\Users\renar\Desktop\CAI\Banco\CAI_877071_Banco\Banco\BancoDatos\obj\Debug\BancoDatos.csproj.CopyComplete
+C:\Users\renar\Desktop\CAI\Banco\CAI_877071_Banco\Banco\BancoDatos\obj\Debug\BancoDatos.dll
+C:\Users\renar\Desktop\CAI\Banco\CAI_877071_Banco\Banco\BancoDatos\obj\Debug\BancoDatos.pdb

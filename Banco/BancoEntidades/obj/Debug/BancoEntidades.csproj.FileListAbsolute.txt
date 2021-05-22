@@ -1,0 +1,6 @@
+C:\Users\renar\Desktop\CAI\Banco\CAI_877071_Banco\Banco\BancoEntidades\bin\Debug\BancoEntidades.dll
+C:\Users\renar\Desktop\CAI\Banco\CAI_877071_Banco\Banco\BancoEntidades\bin\Debug\BancoEntidades.pdb
+C:\Users\renar\Desktop\CAI\Banco\CAI_877071_Banco\Banco\BancoEntidades\obj\Debug\BancoEntidades.csprojAssemblyReference.cache
+C:\Users\renar\Desktop\CAI\Banco\CAI_877071_Banco\Banco\BancoEntidades\obj\Debug\BancoEntidades.csproj.CoreCompileInputs.cache
+C:\Users\renar\Desktop\CAI\Banco\CAI_877071_Banco\Banco\BancoEntidades\obj\Debug\BancoEntidades.dll
+C:\Users\renar\Desktop\CAI\Banco\CAI_877071_Banco\Banco\BancoEntidades\obj\Debug\BancoEntidades.pdb
