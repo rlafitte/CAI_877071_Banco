@@ -31,7 +31,7 @@ namespace BancoGUI
         {
             this.button1 = new System.Windows.Forms.Button();
             this.btnActualizar = new System.Windows.Forms.Button();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.lstClientes = new System.Windows.Forms.ListBox();
             this.tbDni = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -74,13 +74,13 @@ namespace BancoGUI
             this.btnActualizar.UseVisualStyleBackColor = true;
             this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
             // 
-            // listBox1
+            // lstClientes
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(36, 46);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(287, 238);
-            this.listBox1.TabIndex = 2;
+            this.lstClientes.FormattingEnabled = true;
+            this.lstClientes.Location = new System.Drawing.Point(36, 46);
+            this.lstClientes.Name = "lstClientes";
+            this.lstClientes.Size = new System.Drawing.Size(287, 238);
+            this.lstClientes.TabIndex = 2;
             // 
             // tbDni
             // 
@@ -262,7 +262,7 @@ namespace BancoGUI
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.lstClientes);
             this.Controls.Add(this.btnActualizar);
             this.Controls.Add(this.button1);
             this.Name = "FrmPrincipal";
@@ -277,7 +277,7 @@ namespace BancoGUI
 
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnActualizar;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListBox lstClientes;
         private System.Windows.Forms.TextBox tbDni;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox1;

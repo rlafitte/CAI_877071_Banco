@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BancoNegocio
+namespace BancoDatos
 {
-    public class Class1
+    class ClienteMapper
     {
     }
 }

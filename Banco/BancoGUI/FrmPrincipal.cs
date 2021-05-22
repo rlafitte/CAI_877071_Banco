@@ -7,12 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BancoNegocio;
 
 namespace BancoGUI
 {
     public partial class FrmPrincipal : Form
     {
         private Form1 form1;
+        private ClienteNegocio _clNeg;
 
         public FrmPrincipal()
         {
@@ -23,6 +25,7 @@ namespace BancoGUI
         {
             InitializeComponent();
             this.Owner = form1;
+            _clNeg = new ClienteNegocio();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -46,7 +49,8 @@ namespace BancoGUI
         private void btnActualizar_Click(object sender, EventArgs e)
         {
             //este método va a hacer el GET de la API
-
+            lstClientes.DataSource = null;
+            // lstClientes.DataSource = traer clientes de api
         }
     }
 }
