@@ -50,7 +50,7 @@ namespace BancoGUI
         {
             //este método va a hacer el GET de la API
             lstClientes.DataSource = null;
-            // lstClientes.DataSource = traer clientes de api
+            lstClientes.DataSource = _clNeg.Traer();
         }
     }
 }

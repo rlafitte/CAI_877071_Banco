@@ -16,3 +16,5 @@ C:\Users\renar\Desktop\CAI\Banco\CAI_877071_Banco\Banco\BancoGUI\obj\Debug\Banco
 C:\Users\renar\Desktop\CAI\Banco\CAI_877071_Banco\Banco\BancoGUI\obj\Debug\BancoGUI.csproj.CopyComplete
 C:\Users\renar\Desktop\CAI\Banco\CAI_877071_Banco\Banco\BancoGUI\obj\Debug\BancoGUI.exe
 C:\Users\renar\Desktop\CAI\Banco\CAI_877071_Banco\Banco\BancoGUI\obj\Debug\BancoGUI.pdb
+C:\Users\renar\Desktop\CAI\Banco\CAI_877071_Banco\Banco\BancoGUI\bin\Debug\Newtonsoft.Json.dll
+C:\Users\renar\Desktop\CAI\Banco\CAI_877071_Banco\Banco\BancoGUI\bin\Debug\Newtonsoft.Json.xml

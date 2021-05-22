@@ -7,3 +7,5 @@ C:\Users\renar\Desktop\CAI\Banco\CAI_877071_Banco\Banco\BancoDatos\obj\Debug\Ban
 C:\Users\renar\Desktop\CAI\Banco\CAI_877071_Banco\Banco\BancoDatos\obj\Debug\BancoDatos.csproj.CopyComplete
 C:\Users\renar\Desktop\CAI\Banco\CAI_877071_Banco\Banco\BancoDatos\obj\Debug\BancoDatos.dll
 C:\Users\renar\Desktop\CAI\Banco\CAI_877071_Banco\Banco\BancoDatos\obj\Debug\BancoDatos.pdb
+C:\Users\renar\Desktop\CAI\Banco\CAI_877071_Banco\Banco\BancoDatos\bin\Debug\Newtonsoft.Json.dll
+C:\Users\renar\Desktop\CAI\Banco\CAI_877071_Banco\Banco\BancoDatos\bin\Debug\Newtonsoft.Json.xml

@@ -40,7 +40,7 @@ namespace BancoEntidades.Entidades
 
         public override string ToString()
         {
-            return string.Format("Cliente {0}, {1}", this._apellido, this._nombre);
+            return string.Format("Cliente {0}, Apellido: {1}, Nombre: {2}", this._id, this._apellido, this._nombre);
         }
     }
     }
