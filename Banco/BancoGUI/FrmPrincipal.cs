@@ -76,6 +76,7 @@ namespace BancoGUI
             int.TryParse(tbUser.Text, out _id);
             c.id = _id;
 
+            _clNeg.Agregar(c);
             Limpiar();
             Actualizar();
         }

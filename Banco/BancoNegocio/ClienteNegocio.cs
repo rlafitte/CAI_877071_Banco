@@ -1,5 +1,6 @@
 ﻿using BancoDatos;
 using BancoEntidades.Entidades;
+using BancoEntidades.Modelos;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -27,6 +28,11 @@ namespace BancoNegocio
             {
                 throw new Exception("Error al recuperar clientes.");
             }
+        }
+
+        public TransactionResult Agregar(Cliente c)
+        {
+            return _clMap.Insertar(c);
         }
     }
 }
