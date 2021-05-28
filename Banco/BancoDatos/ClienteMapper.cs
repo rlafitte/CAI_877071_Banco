@@ -23,6 +23,11 @@ namespace BancoDatos
         {
             List<Cliente> lst = JsonConvert.DeserializeObject<List<Cliente>>(json);
             return lst;
+        }        
+        private List<Cuenta> MapCuenta(string json)
+        {
+            List<Cuenta> lst = JsonConvert.DeserializeObject<List<Cuenta>>(json);
+            return lst;
         }
 
         public TransactionResult Insertar(Cliente cliente)
@@ -46,6 +51,13 @@ namespace BancoDatos
             n.Add("fechaNacimiento", "2000-01-01");
             n.Add("usuario", "1");
             return n;
+        }
+
+        public List<Cuenta> TraerCuentasVeterinaria()
+        {
+            string json = WebHelper.Get("cuenta");
+            List<Cuenta> resultado = MapCuenta(json);
+            return resultado;
         }
     }
 }

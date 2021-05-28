@@ -67,18 +67,32 @@ namespace BancoGUI
 
         private void btnAgregarCliente_Click(object sender, EventArgs e)
         {
+            if (tbUser.Text == null || tbUser.Text == "")
+            { 
+                MessageBox.Show("ID no puede estar incompleto.");
+            } 
             int _id=0;
             Cliente c = new Cliente();
             c.Ape = tbApellido.Text;
             c.Nombre = tbNombre.Text;
             c.DNI = tbDni.Text;
+            c.Direccion = tbDire.Text;
             
-            int.TryParse(tbUser.Text, out _id);
+            try
+            {
+            _id = int.Parse(tbUser.Text);
+            //int.TryParse(tbUser.Text, out _id);
             c.id = _id;
 
             _clNeg.Agregar(c);
             Limpiar();
             Actualizar();
+                
+            }
+            catch
+            {
+                MessageBox.Show("El ID no es numérico.");
+            }
         }
     }
 }

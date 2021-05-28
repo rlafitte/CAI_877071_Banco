@@ -13,6 +13,7 @@ namespace BancoNegocio
     {
         private ClienteMapper _clMap;
         private List<Cliente> _lstClientes;
+        private List<Cuenta> _lstCuentas;
         public ClienteNegocio()
         {
             _clMap = new ClienteMapper();
@@ -32,7 +33,21 @@ namespace BancoNegocio
 
         public TransactionResult Agregar(Cliente c)
         {
+           
             return _clMap.Insertar(c);
+        }
+
+        public List<Cuenta> TraerCuentas()
+        {
+            try
+            {
+                _lstCuentas = _clMap.TraerCuentasVeterinaria();
+                return _lstCuentas;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error al recuperar clientes.");
+            }
         }
     }
 }
