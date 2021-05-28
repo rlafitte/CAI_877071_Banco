@@ -53,6 +53,15 @@ namespace BancoDatos
             return n;
         }
 
+        public List<Cuenta> TraerCuentaVeterinaria_ID(string s)
+        {
+            string json = WebHelper.Get("cuenta/" + s.ToString());
+            List<Cuenta> resultado = MapCuenta(json);
+            return resultado;
+        }
+
+
+
         public List<Cuenta> TraerCuentasVeterinaria()
         {
             string json = WebHelper.Get("cuenta");

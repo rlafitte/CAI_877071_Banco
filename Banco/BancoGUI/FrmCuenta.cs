@@ -86,5 +86,23 @@ namespace BancoGUI
         {
             Limpiar();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (tbIdBuscado.Text == "")
+            {
+                MessageBox.Show("Por favor complete el id a buscar.");
+            }
+            else
+            {
+                ActualizarConId();
+            }
+        }
+
+        private void ActualizarConId()
+        {
+            lstCuentas.DataSource = null;
+            lstCuentas.DataSource = _clNeg.TraerCuentaPorID(tbIdBuscado.Text);
+        }
     }
 }

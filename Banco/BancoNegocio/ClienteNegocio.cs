@@ -54,5 +54,18 @@ namespace BancoNegocio
         {
             _clMap.InsertarCuenta(i);
         }
+
+        public object TraerCuentaPorID(string s)
+        {
+            try
+            {
+                _lstCuentas = _clMap.TraerCuentaVeterinaria_ID(s);
+                return _lstCuentas;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error al recuperar clientes.");
+            }
+        }
     }
 }

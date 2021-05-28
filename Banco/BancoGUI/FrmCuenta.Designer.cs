@@ -48,6 +48,8 @@ namespace BancoGUI
             this.dtFecApertura = new System.Windows.Forms.DateTimePicker();
             this.dtFecMod = new System.Windows.Forms.DateTimePicker();
             this.chkActivo = new System.Windows.Forms.CheckBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.tbIdBuscado = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -233,11 +235,30 @@ namespace BancoGUI
             this.chkActivo.Text = "checkBox1";
             this.chkActivo.UseVisualStyleBackColor = true;
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(162, 297);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(87, 23);
+            this.button2.TabIndex = 7;
+            this.button2.Text = "Buscar cuenta";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // tbIdBuscado
+            // 
+            this.tbIdBuscado.Location = new System.Drawing.Point(255, 300);
+            this.tbIdBuscado.Name = "tbIdBuscado";
+            this.tbIdBuscado.Size = new System.Drawing.Size(77, 20);
+            this.tbIdBuscado.TabIndex = 23;
+            // 
             // FrmCuenta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.tbIdBuscado);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnActualizar);
             this.Controls.Add(this.lstCuentas);
@@ -248,6 +269,7 @@ namespace BancoGUI
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -272,5 +294,7 @@ namespace BancoGUI
         private System.Windows.Forms.DateTimePicker dtFecApertura;
         private System.Windows.Forms.DateTimePicker dtFecMod;
         private System.Windows.Forms.CheckBox chkActivo;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox tbIdBuscado;
     }
 }
