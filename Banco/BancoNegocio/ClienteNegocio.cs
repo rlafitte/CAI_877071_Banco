@@ -49,5 +49,10 @@ namespace BancoNegocio
                 throw new Exception("Error al recuperar clientes.");
             }
         }
+
+        public void AgregarCuenta(Cuenta i)
+        {
+            _clMap.InsertarCuenta(i);
+        }
     }
 }

@@ -1,4 +1,5 @@
-﻿using BancoNegocio;
+﻿using BancoEntidades.Entidades;
+using BancoNegocio;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -47,6 +48,43 @@ namespace BancoGUI
         {
             lstCuentas.DataSource = null;
             lstCuentas.DataSource = _clNeg.TraerCuentas();
+        }
+
+        private void tbNombre_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAgregarCliente_Click(object sender, EventArgs e)
+        {
+            Cuenta c = new Cuenta();
+            c.id = int.Parse(tbId.Text);
+            c.NroCuenta = int.Parse(tbNroCta.Text);
+            c.Saldo = float.Parse(tbSaldo.Text);
+            c.Activo = chkActivo.Checked;
+            c.FechaApertura = dtFecApertura.Value;
+            _clNeg.AgregarCuenta(c);
+            Limpiar();
+        }
+
+        private void Limpiar()
+        {
+            tbId.Clear();
+            tbNroCta.Clear();
+            tbSaldo.Clear();
+            chkActivo.Checked = false;
+            dtFecApertura.Value = System.DateTime.Now;
+            dtFecMod.Value = System.DateTime.Now;
+        }
+
+        private void btnLimpiarCliente_Click(object sender, EventArgs e)
+        {
+            Limpiar();
         }
     }
 }

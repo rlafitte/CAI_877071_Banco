@@ -23,7 +23,7 @@ namespace BancoDatos
         {
             List<Cliente> lst = JsonConvert.DeserializeObject<List<Cliente>>(json);
             return lst;
-        }        
+        }
         private List<Cuenta> MapCuenta(string json)
         {
             List<Cuenta> lst = JsonConvert.DeserializeObject<List<Cuenta>>(json);
@@ -58,6 +58,30 @@ namespace BancoDatos
             string json = WebHelper.Get("cuenta");
             List<Cuenta> resultado = MapCuenta(json);
             return resultado;
+        }
+
+        public TransactionResult InsertarCuenta(Cuenta c)
+        {
+            NameValueCollection obj = ReverseCuenta(c);
+
+            string json = WebHelper.Post("cuenta", obj);
+
+            TransactionResult lst = JsonConvert.DeserializeObject<TransactionResult>(json);
+
+            return lst;
+        }
+        private NameValueCollection ReverseCuenta(Cuenta cu)
+        {
+            NameValueCollection n = new NameValueCollection();
+            n.Add("id", cu.id.ToString());
+            n.Add("nroCuenta", cu.NroCuenta.ToString());
+            n.Add("descripcion", "877071");
+            n.Add("saldo", cu.Saldo.ToString());
+            n.Add("fechaApertura", cu.FechaApertura.ToString());
+            n.Add("fechaModificacion", "2000-01-01");
+            n.Add("activo", cu.Activo.ToString());
+            n.Add("idCliente", cu.idCliente.ToString());
+            return n;
         }
     }
 }

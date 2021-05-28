@@ -30,7 +30,10 @@ namespace BancoEntidades.Entidades
         [DataMember(Name = "idCliente")]
         public int idCliente { get; set; }
 
+        public Cuenta()
+        {
 
+        }
         public override string ToString()
         {
             return string.Format("id {0}, NroCuenta: {1}, Saldo: ${2}.-", this.id, this.NroCuenta, this.Saldo);
