@@ -15,9 +15,12 @@ namespace BancoEntidades.Entidades
         private string _apellido;
         private string _direccion;
         private string _DNI;
+        private Cuenta _cuenta;
 
-
-
+        public Cliente()
+        {
+            _cuenta = new Cuenta();
+        }
 
         [DataMember(Name = "apellido")]
         public string Ape { get => _apellido; set => _apellido = value; }

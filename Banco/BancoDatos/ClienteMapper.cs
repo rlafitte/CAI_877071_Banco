@@ -55,7 +55,7 @@ namespace BancoDatos
 
         public List<Cuenta> TraerCuentaVeterinaria_ID(string s)
         {
-            string json = WebHelper.Get("cuenta/" + s.ToString());
+            string json = WebHelper.Get("cuenta/" + s.ToString()); //esto mapea con idCliente, no con ID
             List<Cuenta> resultado = MapCuenta(json);
             return resultado;
         }

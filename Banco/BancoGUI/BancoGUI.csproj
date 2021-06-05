@@ -58,6 +58,12 @@
     <Compile Include="FrmCuenta.Designer.cs">
       <DependentUpon>FrmCuenta.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmCuentaIndividual.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCuentaIndividual.Designer.cs">
+      <DependentUpon>FrmCuentaIndividual.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
